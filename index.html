@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICBS Cartogram</title>
+    <style>
+        svg {
+            display: block;
+            margin: 0 auto;
+        }
+        #buttons {
+            text-align: center;
+            margin: 20px;
+        }
+        #legend {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .radio-group label {
+            margin-right: 20px;
+            font-size: 16px;
+        }
+        .radio-group input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="radio-group">
+        <label><input type="radio" name="input" value="0" checked> Obesity rate %</label>
+        <label><input type="radio" name="input" value="1"> Trump vote %</label>
+    </div>
+    <div id="legend"></div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="legend.js"></script>
+</body>
+</html>
